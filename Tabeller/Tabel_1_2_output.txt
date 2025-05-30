@@ -1,0 +1,8 @@
+Tabel 1.2 – Gennemsnit for bankaktiver, erhvervslån og SMV-lån pr. bankstørrelsesgruppe
+
+     Bankstørrelse  Gns. totale aktiver  Gns. erhvervslån  Gns. SMV-lån  Andel SMV-lån
+        Små banker              289.639            56.852        34.907          0.614
+Mellemstore banker             2703.132           565.805       267.216          0.472
+      Store banker             2254.607           521.263       265.862          0.510
+Meget store banker             8745.893          2015.910       833.263          0.413
+       Mega banker            11932.000          2370.706       811.886          0.342
