@@ -1,0 +1,36 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              andel_smv   R-squared:                       0.973
+Model:                            OLS   Adj. R-squared:                  0.968
+Method:                 Least Squares   F-statistic:                     370.6
+Date:                Thu, 29 May 2025   Prob (F-statistic):           7.36e-63
+Time:                        23:19:48   Log-Likelihood:                 247.80
+No. Observations:                  90   AIC:                            -469.6
+Df Residuals:                      77   BIC:                            -437.1
+Df Model:                          12                                         
+Covariance Type:                  HC1                                         
+=========================================================================================================================================================
+                                                                                            coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                                 0.6025      0.011     56.895      0.000       0.582       0.623
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mega banker]                     -0.2526      0.019    -12.972      0.000      -0.291      -0.214
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Meget store banker]              -0.1839      0.014    -12.722      0.000      -0.212      -0.156
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mellemstore banker]              -0.1410      0.009    -15.444      0.000      -0.159      -0.123
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Store banker]                    -0.0916      0.012     -7.698      0.000      -0.115      -0.068
+npl_ratio                                                                                -0.0041      0.007     -0.558      0.577      -0.018       0.010
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mega banker]:npl_ratio           -0.0006      0.016     -0.039      0.969      -0.033       0.031
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Meget store banker]:npl_ratio    -0.0095      0.009     -1.006      0.315      -0.028       0.009
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mellemstore banker]:npl_ratio     0.0128      0.007      1.708      0.088      -0.002       0.027
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Store banker]:npl_ratio          -0.0066      0.009     -0.755      0.450      -0.024       0.010
+leverage_ratio                                                                            0.0136      0.007      1.940      0.052      -0.000       0.027
+time_trend                                                                               -0.0033      0.009     -0.375      0.708      -0.020       0.014
+net_interest_income_ratio                                                                -0.0154      0.003     -5.009      0.000      -0.021      -0.009
+==============================================================================
+Omnibus:                        7.981   Durbin-Watson:                   2.151
+Prob(Omnibus):                  0.018   Jarque-Bera (JB):               12.093
+Skew:                          -0.320   Prob(JB):                      0.00237
+Kurtosis:                       4.678   Cond. No.                         20.8
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)

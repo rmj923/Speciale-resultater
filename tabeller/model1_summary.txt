@@ -1,0 +1,28 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              andel_smv   R-squared:                       0.943
+Model:                            OLS   Adj. R-squared:                  0.940
+Method:                 Least Squares   F-statistic:                     535.0
+Date:                Thu, 29 May 2025   Prob (F-statistic):           2.30e-59
+Time:                        23:34:43   Log-Likelihood:                 214.69
+No. Observations:                  90   AIC:                            -419.4
+Df Residuals:                      85   BIC:                            -406.9
+Df Model:                           4                                         
+Covariance Type:                  HC1                                         
+===============================================================================================================================================
+                                                                                  coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                       0.6113      0.006     95.373      0.000       0.599       0.624
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mega banker]           -0.2686      0.007    -39.633      0.000      -0.282      -0.255
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Meget store banker]    -0.1975      0.007    -27.529      0.000      -0.212      -0.183
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mellemstore banker]    -0.1408      0.009    -15.813      0.000      -0.158      -0.123
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Store banker]          -0.1019      0.010    -10.598      0.000      -0.121      -0.083
+==============================================================================
+Omnibus:                        0.451   Durbin-Watson:                   2.387
+Prob(Omnibus):                  0.798   Jarque-Bera (JB):                0.404
+Skew:                          -0.159   Prob(JB):                        0.817
+Kurtosis:                       2.916   Cond. No.                         5.83
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
