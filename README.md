@@ -16,4 +16,4 @@ Dette repository indeholder empiriske resultater fra mit speciale, skrevet på �
 - Supplerende offentlige datakilder
 
 ## Kontakt
-Emil Henry Erbas – emil@ambrosiagroup.dk
+Emil Henry Erbas – rmj923@alumni.ku.dk
