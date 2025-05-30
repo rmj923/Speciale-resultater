@@ -1,0 +1,39 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              andel_smv   R-squared:                       0.973
+Model:                            OLS   Adj. R-squared:                  0.969
+Method:                 Least Squares   F-statistic:                     374.7
+Date:                Fri, 30 May 2025   Prob (F-statistic):           2.97e-63
+Time:                        16:03:02   Log-Likelihood:                 249.28
+No. Observations:                  90   AIC:                            -470.6
+Df Residuals:                      76   BIC:                            -435.6
+Df Model:                          13                                         
+Covariance Type:                  HC1                                         
+=========================================================================================================================================================================
+                                                                                                            coef    std err          z      P>|z|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                                                 0.5633      0.043     13.253      0.000       0.480       0.647
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mellemstore banker]                              -0.1821      0.046     -3.962      0.000      -0.272      -0.092
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Store banker]                                     0.0634      0.075      0.844      0.398      -0.084       0.210
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Meget store banker]                              -0.1456      0.052     -2.779      0.005      -0.248      -0.043
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mega banker]                                     -0.2346      0.084     -2.809      0.005      -0.398      -0.071
+net_interest_income_ratio                                                                                -0.0023      0.001     -3.114      0.002      -0.004      -0.001
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mellemstore banker]:net_interest_income_ratio     0.0008      0.001      1.049      0.294      -0.001       0.002
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Store banker]:net_interest_income_ratio          -0.0025      0.001     -1.905      0.057      -0.005     7.3e-05
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Meget store banker]:net_interest_income_ratio -7.495e-05      0.001     -0.080      0.936      -0.002       0.002
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mega banker]:net_interest_income_ratio            0.0002      0.002      0.162      0.871      -0.003       0.003
+return_on_assets                                                                                          0.0074      0.014      0.539      0.590      -0.019       0.034
+npl_ratio                                                                                                 0.0113      0.003      3.681      0.000       0.005       0.017
+leverage_ratio                                                                                            0.0191      0.004      4.305      0.000       0.010       0.028
+time_trend                                                                                                0.0073      0.010      0.698      0.485      -0.013       0.028
+==============================================================================
+Omnibus:                        4.549   Durbin-Watson:                   1.819
+Prob(Omnibus):                  0.103   Jarque-Bera (JB):                5.866
+Skew:                           0.068   Prob(JB):                       0.0532
+Kurtosis:                       4.243   Cond. No.                     5.31e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+[2] The condition number is large, 5.31e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

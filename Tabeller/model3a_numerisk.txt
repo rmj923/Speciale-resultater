@@ -1,0 +1,32 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              andel_smv   R-squared:                       0.855
+Model:                            OLS   Adj. R-squared:                  0.844
+Method:                 Least Squares   F-statistic:                     162.7
+Date:                Fri, 30 May 2025   Prob (F-statistic):           9.95e-44
+Time:                        16:03:02   Log-Likelihood:                 172.72
+No. Observations:                  90   AIC:                            -331.4
+Df Residuals:                      83   BIC:                            -313.9
+Df Model:                           6                                         
+Covariance Type:                  HC1                                         
+=============================================================================================
+                                coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+Intercept                     0.5883      0.100      5.904      0.000       0.393       0.784
+bank_size_numeric            -0.0397      0.009     -4.574      0.000      -0.057      -0.023
+time_trend                   -0.0473      0.017     -2.852      0.004      -0.080      -0.015
+return_on_assets              0.0279      0.021      1.310      0.190      -0.014       0.070
+npl_ratio                    -0.0070      0.006     -1.206      0.228      -0.018       0.004
+net_interest_income_ratio    -0.0027      0.001     -3.145      0.002      -0.004      -0.001
+leverage_ratio                0.0286      0.010      2.843      0.004       0.009       0.048
+==============================================================================
+Omnibus:                        2.260   Durbin-Watson:                   2.916
+Prob(Omnibus):                  0.323   Jarque-Bera (JB):                2.269
+Skew:                          -0.348   Prob(JB):                        0.322
+Kurtosis:                       2.654   Cond. No.                     1.30e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+[2] The condition number is large, 1.3e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

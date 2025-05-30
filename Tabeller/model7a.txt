@@ -1,0 +1,35 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         log_assets_geo   R-squared:                       0.943
+Model:                            OLS   Adj. R-squared:                  0.937
+Method:                 Least Squares   F-statistic:                     405.8
+Date:                Fri, 30 May 2025   Prob (F-statistic):           6.90e-63
+Time:                        16:03:02   Log-Likelihood:                -18.639
+No. Observations:                  90   AIC:                             57.28
+Df Residuals:                      80   BIC:                             82.28
+Df Model:                           9                                         
+Covariance Type:                  HC1                                         
+=======================================================================================================================
+                                                          coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------------
+Intercept                                               7.6821      0.583     13.173      0.000       6.539       8.825
+C(geografisk_eksponering)[T.SSM-lande]                  2.3704      0.197     12.059      0.000       1.985       2.756
+C(geografisk_eksponering)[T.EØS (uden for SSM)]         0.8296      0.311      2.670      0.008       0.221       1.438
+C(geografisk_eksponering)[T.Ikke-EØS Europa]           -0.0740      0.252     -0.293      0.769      -0.568       0.420
+C(geografisk_eksponering)[T.Resten af verden (RoW)]     2.4832      0.296      8.403      0.000       1.904       3.062
+time_trend                                              0.6772      0.249      2.715      0.007       0.188       1.166
+return_on_assets                                       -0.5624      0.232     -2.426      0.015      -1.017      -0.108
+npl_ratio                                              -0.0610      0.137     -0.447      0.655      -0.329       0.207
+net_interest_income_ratio                              -0.0314      0.010     -3.190      0.001      -0.051      -0.012
+leverage_ratio                                          0.1842      0.099      1.851      0.064      -0.011       0.379
+==============================================================================
+Omnibus:                       46.310   Durbin-Watson:                   2.325
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              174.437
+Skew:                          -1.638   Prob(JB):                     1.32e-38
+Kurtosis:                       8.982   Cond. No.                     1.59e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+[2] The condition number is large, 1.59e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

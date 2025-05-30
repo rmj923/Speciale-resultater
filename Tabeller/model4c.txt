@@ -1,0 +1,39 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              andel_smv   R-squared:                       0.973
+Model:                            OLS   Adj. R-squared:                  0.968
+Method:                 Least Squares   F-statistic:                     359.8
+Date:                Fri, 30 May 2025   Prob (F-statistic):           1.35e-62
+Time:                        16:03:02   Log-Likelihood:                 248.15
+No. Observations:                  90   AIC:                            -468.3
+Df Residuals:                      76   BIC:                            -433.3
+Df Model:                          13                                         
+Covariance Type:                  HC1                                         
+=========================================================================================================================================================
+                                                                                            coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                                 0.6733      0.072      9.404      0.000       0.533       0.814
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mellemstore banker]              -0.1753      0.028     -6.245      0.000      -0.230      -0.120
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Store banker]                    -0.0734      0.032     -2.284      0.022      -0.136      -0.010
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Meget store banker]              -0.1533      0.036     -4.300      0.000      -0.223      -0.083
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mega banker]                     -0.2559      0.060     -4.285      0.000      -0.373      -0.139
+npl_ratio                                                                                -0.0037      0.010     -0.383      0.702      -0.022       0.015
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mellemstore banker]:npl_ratio     0.0156      0.010      1.609      0.108      -0.003       0.035
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Store banker]:npl_ratio          -0.0077      0.011     -0.680      0.496      -0.030       0.014
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Meget store banker]:npl_ratio    -0.0129      0.012     -1.053      0.292      -0.037       0.011
+C(bank_stoerrelse, Treatment(reference="Små banker"))[T.Mega banker]:npl_ratio            0.0020      0.021      0.096      0.924      -0.039       0.043
+return_on_assets                                                                          0.0079      0.011      0.720      0.471      -0.014       0.029
+leverage_ratio                                                                            0.0104      0.006      1.814      0.070      -0.001       0.022
+time_trend                                                                               -0.0060      0.010     -0.607      0.544      -0.025       0.013
+net_interest_income_ratio                                                                -0.0023      0.000     -4.919      0.000      -0.003      -0.001
+==============================================================================
+Omnibus:                        7.577   Durbin-Watson:                   2.158
+Prob(Omnibus):                  0.023   Jarque-Bera (JB):               10.413
+Skew:                          -0.345   Prob(JB):                      0.00548
+Kurtosis:                       4.517   Cond. No.                     3.23e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+[2] The condition number is large, 3.23e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
