@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Indlæs data
-file_path = '/Users/emilerbas/Desktop/data.2.csv'
+file_path = '/Users/emilerbas/Desktop/SUP_renset.csv'
 data = pd.read_csv(file_path)
 
 # Filtrér relevante variable og bankstørrelser
