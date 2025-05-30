@@ -9,10 +9,18 @@ Dette repository indeholder empiriske resultater fra mit speciale, skrevet på �
 - `figurer/`: Grafiske præsentationer af resultater
 - `scripts/`: Kode til analyse (Python / Jupyter)
 
-## 📊 Datasæt
+## Datagrundlag
 
-- ECB SSM List of Supervised Entities (2023)
-- EBA bankoplysninger og Eurostat-indikatorer
+De anvendte data er baseret på:
+
+- **ECB SSM List of Supervised Entities (2023)**  
+  Officielt tilgængeligt på ECB’s hjemmeside  
+  [https://www.bankingsupervision.europa.eu](https://www.bankingsupervision.europa.eu)
+
+- Renset version af SUP-datasættet er inkluderet i `data/SUP_renset.csv`  
+  Indeholder et udsnit med variable og observationer, der anvendes i regressionsanalyser.
+
+Originaldata kan rekvireres via ECB’s dataportal.
 
 ## 👨‍💻 Kontakt
 
