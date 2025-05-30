@@ -7,7 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # 1. Indlæs data
-file_path = '/Users/emilerbas/Desktop/data.2.csv'
+file_path = '/Users/emilerbas/Desktop/SUP_renset.csv'
 data = pd.read_csv(file_path)
 
 # 2. Filtrér relevante CB_ITEM og bankstørrelser
