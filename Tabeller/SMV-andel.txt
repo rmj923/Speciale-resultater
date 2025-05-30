@@ -1,0 +1,8 @@
+Statistik over SMV-andel for hver bankstørrelse (sorteret):
+
+   bank_stoerrelse  Gennemsnit  Median  Standardafvigelse  Minimum  Maksimum
+        Små banker       0.611   0.616              0.027    0.555     0.649
+Mellemstore banker       0.471   0.459              0.026    0.436     0.521
+      Store banker       0.509   0.509              0.030    0.451     0.553
+Meget store banker       0.414   0.413              0.014    0.387     0.437
+       Mega banker       0.343   0.341              0.009    0.318     0.357
