@@ -25,4 +25,4 @@ Originaldata kan rekvireres via ECB’s dataportal.
 ## 👨‍💻 Kontakt
 
 Emil Henry Erbas  
-📧 emil@ambrosiagroup.dk
+📧 emil.erbas@gmail.com
