@@ -1,6 +1,6 @@
 # Speciale: Bankstørrelse og SMV-udlån
 
-Dette repository indeholder empiriske resultater fra mit speciale, skrevet på Økonomistudiet ved Københavns Universitet. Specialet undersøger sammenhængen mellem bankstørrelse og udlån til små og mellemstore virksomheder (SMV’er) i euroområdet.
+Dette repository indeholder empiriske resultater fra mit speciale, skrevet på Økonomistudiet ved Københavns Universitet. Specialet undersøger sammenhængen mellem bankstørrelse og udlån til små og mellemstore virksomheder (SMV’er) i EU.
 
 ## 📁 Indhold
 
